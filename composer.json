@@ -59,8 +59,16 @@
     "wordpress": "3.8.1",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.6",
-    "wp-cli/wp-cli": "v0.13.0",
-    "vlucas/phpdotenv": "~1.0.5"
+    "vlucas/phpdotenv": "~1.0.5",
+    "wpackagist/wordpress-seo": "*",
+    "wpackagist/google-analytics-for-wordpress": "*",
+    "wpackagist/enable-media-replace": "*",
+    "wpackagist/regenerate-thumbnails": "*",
+    "wpackagist/backupwordpress": "*",
+    "wpackagist/rewrite-rules-inspector": "*",
+    "wpackagist/categories-images": "*",
+    "wpackagist/attachments": "*"
+
   },
   "extra": {
     "installer-paths": {
