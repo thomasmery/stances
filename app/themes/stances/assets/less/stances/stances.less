@@ -1,0 +1,999 @@
+@charset "UTF-8";
+
+/* Média fluide simple
+   Remarque : un média fluide exige que vous supprimiez les attributs de hauteur et de largeur du média du code HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+   */
+   img, object, embed, video {
+   	max-width: 100%;
+   	height: auto;
+   }
+   /* IE 6 ne prend pas en charge max-width ; la largeur par défaut est donc fixée à 100% */
+   .ie6 img {
+   	width:100%;
+   }
+
+   .Novecentosanswide-Normal { 
+   	font-family: Novecentosanswide-Normal;
+   	font-weight: normal;
+   	font-style: normal;
+   }
+
+
+/*
+	Propriétés de grille fluide Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiré par "Responsive Web Design" par Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	et le système Golden Grid par Joni Korpi
+	http://goldengridsystem.com/
+	*/
+
+	/* Disposition mobile : 480px et moins. */
+
+	.gridContainer {
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.36%;
+		padding-left: 1.82%;
+		padding-right: 1.82%;
+
+	}
+
+
+	body {
+
+		text-align: left;
+		background-color: #191919;
+		background-image: url(../img/FOND-12.jpg);
+		background-repeat: repeat-x;
+		background-position: 0px -66px;
+	}
+
+
+	body,td,th {
+		font-family: Capriola, sans-serif;
+		color: #666;
+	}
+	a:link {
+		color: #666;
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #666;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #666;
+	}
+	a:active {
+		text-decoration: none;
+	}
+
+
+
+	h4 {
+		font-size: 16px;
+		color: #009EDF;
+	}
+
+	.textplus {
+		color: #999;
+		line-height: 2em;
+	}
+
+	.textbold {
+		font-family: 'Capriola', sans-serif;
+		font-size:15px;
+		color: #B3B3B3;
+		line-height: 2em;	
+	}
+
+	.alignfacebook {
+		vertical-align: bottom;
+		width:auto;
+		height:11px;
+
+	}
+
+	.leger {
+		color: #666;
+		line-height:170%
+
+	}
+
+
+
+	#LayoutDivMenu {
+		clear: both;
+		display: block;
+		height: auto;
+		width: 100%;
+
+	}
+
+
+
+	#LayoutDivBandeau {
+
+		clear: both;
+		float: left;
+		margin-left: 0px;
+		display: block;
+		width: 250px;
+		padding-top: 0px;
+
+	}
+
+
+
+	#DivFooter {
+		clear: both;
+		font-size: 9px;
+		float: left;
+		margin-left: 0;
+		margin-top: 40px;
+		padding-bottom:2.3em;
+		padding-top: 2.3em;
+		width: 100%;
+		display: block;
+		background-image: url(../img/footer-ombre2.png);
+		background-repeat: no-repeat;
+	}
+
+	#DivText2 {
+		color: #E6E6E6;
+		clear: both;
+		float: left;
+		width: 100%;
+		display: none;
+		line-height: 2em;
+		font-size: 12px;
+		margin-left: 0;
+		margin-top: 50px;
+		padding-top: 5px;
+	}
+
+	#DivAdress {
+		color: #E6E6E6;
+		clear: both;
+		float: left;
+		width: 100%;
+		display: block;
+		line-height: 2em;
+		font-size: 11px;
+		margin-left: 0;
+		margin-top: 10px;
+		padding-top: 0;
+	}
+
+	#DivCompetenceTitre {
+		color: #E6E6E6;
+		clear: both;
+		float: left;
+		width: 100%;
+		display: block;
+		line-height: 2em;
+		font-size: 12px;
+		margin-left: 0;
+		margin-top: 10px;
+		padding-top: 0;
+	}
+
+
+
+	#PPdetail2 {
+
+		float: left;
+		margin-left: 0%;
+		margin-top: 10%;
+		display: block;
+		width: 88%;
+		color: #666666;
+		font-size: 11px;
+		line-height: 1.5em;
+
+	}
+
+
+
+	#divpp {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		margin-top: 10px;
+		width: 100%;
+		display: block;
+
+	}
+
+	.imageflottante2 {
+
+		float: left;
+		padding-right: 0.5em;
+	}
+
+	.imageflottante3 {
+
+		margin-bottom: -1.2em;
+		padding-right: 0.5em;
+		width:auto;
+		height:44px;
+	}
+	
+	.imageflottante4 {
+
+		margin-bottom: -0.4em;
+		padding-right: 0.5em;
+		width:auto;
+		height:44px;
+	}
+	
+	.imageflottante5 {
+
+		margin-bottom: -0.8em;
+		padding-right: 0.5em;
+		width:auto;
+		height:44px;
+	}
+
+
+	.imageflottanteACCUEIL {
+		float: left;
+		padding-right: 0.5em;
+
+	}
+	.imagemenu{
+		width:auto;
+		height:37px;
+	}
+	
+	.imagemenuhome {
+		width:auto;
+		height:35px;
+		display:none;
+	}
+
+
+	.texttitre {
+		font-family: 'Capriola', sans-serif;
+		font-size:15px;
+		color: #B3B3B3;
+		line-height: 2em;
+
+	}
+
+	.texttitre2 {
+		font-family: 'Capriola', sans-serif;
+		font-size:22px;
+		color: #B3B3B3;
+		line-height: 1em;
+	}
+
+	.texttitre3 {
+		font-family: 'Capriola', sans-serif;
+		font-size:18px;
+		color: #B3B3B3;
+		line-height: 1em;
+	}
+
+
+
+	.titrecenter{
+		font-family: 'Capriola', sans-serif;
+		font-size: 15px;
+		color: #B3B3B3;
+		line-height: 1em;
+		text-align: center;
+	}
+
+	.fichetech {
+		font-family: 'Capriola', sans-serif;
+		font-size: 10px;
+		color: #666;
+		line-height: 1.3em;
+	}
+
+
+	.fichetech3 {
+		font-family: 'Capriola', sans-serif;
+		font-size: 12px;
+		color: #999;
+		line-height: 1.7em;
+		padding-bottom: 1em;
+	}
+
+	.textcenter {
+		font-family: 'Capriola', sans-serif;
+		font-size: 11px;
+		color: #999;
+		line-height: 1.4em;
+		text-align: center;
+	}
+
+	.image2 {
+		float: top;
+		padding-top: 1em;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.image3 {
+		float: top;
+		padding-bottom: 1.5em;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.imagehome {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+	.GENRE {
+		font-family: 'Capriola', sans-serif;
+		font-size: 11px;
+		color: #B3B3B3;
+		line-height: 1.3em;
+	}
+
+	#DIV-PP-ICON {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		padding-bottom: 1.5em;
+		display: block;
+
+	}
+
+
+
+	#DivAccueil {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		margin-top: 20px;
+		width: 100%;
+		display: block;
+		padding-bottom: 25px;
+	}
+	#DivAccueil-text {
+		clear: both;
+		margin-left: 0;
+		margin-right: auto;
+		margin-bottom: 30px;
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+
+	.legende {
+		position: relative;
+		text-align: right;
+		display: block;
+		margin-top: -5px;
+		margin-left:auto;
+		color: #999;
+		font-family: Novecentosanswide-Normal;
+		font-size: 7px;;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+	}
+
+	.textt {
+		color: #B3B3B3;
+	}
+
+	.textt a{color: #B3B3B3}
+
+	#divcompetence {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+
+	}
+
+	.fonction {
+		color: #009edf;
+		clear:both;
+		padding-top:0;
+
+	}
+
+
+	#DivEquipe {
+		color: #B3B3B3;
+		clear: both;
+		float: left;
+		width: 58.3333%;
+		display: block;
+		margin-top: 0;
+		margin-bottom: 2em;
+		font-family: 'Capriola', sans-serif;
+		font-size: 11px;
+		line-height: 1.7em;
+		// -webkit-columns: 1;
+		// -moz-columns: 1;
+		// columns: 1;
+		// column-gap: 0;
+
+	}
+
+	#DivEquipe p {
+		color: #B3B3B3;
+		display: inline-block; 
+		-webkit-column-break-after: always;
+		break-inside: avoid-column;
+		word-wrap: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+	}
+
+	#DivPhoto {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		margin-top: 20px;
+		width: 100%;
+		display: block;
+		padding-bottom: 25px;
+	}
+
+
+	.intropole {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		font-size: 12px;
+		line-height: 1.7em;
+		color: #B3B3B3;
+	}
+
+
+	/* Disposition tablette : 481px sur 768px. Hérite des styles de : Disposition mobile */
+
+	@media only screen and (min-width: 481px) {
+
+
+
+		.gridContainer {
+			width: 95%;
+			padding-left: 1.1625%;
+			padding-right: 1.1625%;
+			margin-left: 8%;
+			margin-right: 8%;
+		}
+
+		body {
+
+			text-align: left;
+			background-color: #191919;
+			background-image: url(../img/FOND-12.jpg);
+			background-repeat: repeat-x;
+			background-position: 0px 0px;
+		}
+
+
+		.texttitre {
+			font-family: 'Capriola', sans-serif;
+			font-size:18px;
+			color: #B3B3B3;
+			line-height: 2em;
+
+		}
+
+		.texttitre2 {
+			font-family: 'Capriola', sans-serif;
+			font-size:22px;
+			color: #B3B3B3;
+			line-height: 1em;
+		}
+
+		.texttitre3 {
+			font-family: 'Capriola', sans-serif;
+			font-size:18px;
+			color: #B3B3B3;
+			line-height: 1em;
+		}
+
+		.leger {
+			color: #666;
+			line-height:100%
+
+
+		}
+
+
+		#LayoutDivMenu {
+			clear: both;
+			margin-left: 0;
+			display: block;
+			max-width: 90%;
+			height: auto;
+			width: auto;    
+		}
+
+		#divpp {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 0;
+			width: 100%;
+			display: block;
+
+		}
+
+
+
+		#LayoutDivBandeau {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+			height: 160px;
+			padding-top: 0;
+		}
+
+
+
+		#LayoutDivHOME {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+		}
+
+
+
+		#DivFooter {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+		}
+
+
+		#DivText2 {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 100%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+
+		#DivAdress {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 100%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+		#DivCompetenceTitre {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 100%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+
+
+		#divpp {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+
+		}
+
+
+		#DivAccueil {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 50px;
+			width: 576px;
+			display: block;
+			padding-bottom: 25px;
+		}
+		#DivAccueil-text {
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			text-align: center;
+			width: 48.9795%;
+			display: block;
+		}
+
+		#DivPhoto {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 50px;
+			width: 576px;
+			display: block;
+			padding-bottom: 25px;
+		}
+
+		.legende {
+			position: relative;
+			text-align: right;
+			display: block;
+			margin-top: 10px;
+			margin-right: 2px;
+			color: #777;
+			font-family: Novecentosanswide-Normal;
+			font-size: 9px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom:-5px;
+		}
+
+		#divcompetence {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+
+		}
+
+		.imagemenu{
+			width:auto;
+			height:auto;
+		}
+
+
+		.imagemenuhome {
+			width: auto;
+			height: auto;
+			display: inline;
+		}
+
+		.imageflottante3 {
+
+			margin-bottom: -2em;
+			width: auto;
+			height: auto;
+		}
+
+
+		.alignfacebook {
+			vertical-align: bottom;
+			width:auto;
+			height:auto;
+		}
+
+		.textcenter {
+			font-family: 'Capriola', sans-serif;
+			font-size: 11px;
+			color: #777;
+			line-height: 1.4em;
+			text-align: center;
+		}
+
+
+		#DivEquipe {
+			color: #B3B3B3;
+			clear: both;
+			float: left;
+			width: 87.1794%;
+			display: block;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			font-family: 'Capriola', sans-serif;
+			font-size: 11px;
+			line-height: 1.7em;
+			// -webkit-columns: 3;
+			// -moz-columns: 3;
+			// columns: 3;
+			// column-gap: 3em;
+
+
+		}
+
+		#DivEquipe p {
+			color: #B3B3B3;
+			display: inline-block; 
+			-webkit-column-break-after: always;
+			break-inside: avoid-column;
+			word-wrap: break-word;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			hyphens: auto;
+			margin-top: 0;
+		}
+
+		#DivEquipe a {
+			color: #666666;
+		}
+
+
+
+	}
+
+
+	/* Disposition bureau : 769px à max. 1232px.  Hérite des styles de : Disposition mobile et disposition tablette */
+
+	@media only screen and (min-width: 769px) {
+
+
+		.gridContainer {
+			width: 88.2%;
+			max-width: 1232px;
+			padding-left: 0.9%;
+			padding-right: 0.9%;
+			margin: auto;
+			text-align: left;
+		}
+
+
+
+
+		#LayoutDivMenu {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			display: block;    
+			max-width: 100%;
+			height: auto;
+			width: 100%;
+		}
+
+
+		#DivText2 {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 48.9795%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+
+		#DivAdress {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 48.9795%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+		#DivCompetenceTitre {
+			color: #969696;
+			clear: both;
+			float: left;
+			width: 48.9795%;
+			display: block;
+			line-height: 2em;
+			font-size: 12px;
+			margin-left: 0;
+			margin-top: 50px;
+			padding-top: 5px;
+		}
+
+
+
+		#LayoutDivBandeau {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 100%;
+			display: block;
+			height: 160px;
+			text-align: left;
+		}
+
+
+
+
+
+
+		#DivFooter {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 40px;
+			padding-bottom:2.3em;
+			padding-top: 2.3em;
+			width: 100%;
+			display: block;
+			background-image: url(../img/footer-ombre2.png);
+			background-repeat: no-repeat;
+			text-indent: 0.5em;
+			color: #999;
+
+		}
+
+
+
+
+
+		#PPdetail2 {
+
+			float: left;
+			margin-left: 2.0408%;
+			margin-top:0;
+			display: block;
+			width: 28.5714%;
+			color: #666666;
+			font-size: 11px;
+			line-height: 1.5em;
+
+		}
+
+
+		#divpp {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			width: 59.1836%;
+			display: block;
+			color: #999999;
+
+
+		}
+
+		#divcompetence {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-right: 21%;
+			width: 38.7755%;
+			display: block;
+
+		}
+
+		#divppdetail {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 50px;
+			width: 59.1836%;
+			display: block;
+			color: #999999;
+			font-size: 10px;
+			line-height: 1.5em;
+
+		}
+
+
+		.intro {
+			background-image: url(../img/degradetxt.png);
+			color: #999;
+			padding: 2em;
+			width: 90%;
+			background-repeat: repeat-y;
+			margin-top: 0;
+
+		}
+
+
+
+		#DivAccueil {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 50px;
+			width: 902px;
+			display: block;
+			padding-bottom: 25px;
+		}
+		#DivAccueil-text {
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			text-align: center;
+			width: 48.9795%;
+			display: block;
+
+		}
+
+		#DivPhoto {
+			clear: both;
+			float: left;
+			margin-left: 0;
+			margin-top: 50px;
+			width: 902px;
+			display: block;
+			padding-bottom: 5px;
+		}
+
+
+		.legende {
+			position: relative;
+			text-align: right;
+			display: block;
+			margin-top: -5px;
+			margin-right: 2px;
+			color: #777;
+			font-family: Novecentosanswide-Normal;
+			font-size: 9px;
+			letter-spacing: 1px;
+			text-transform:uppercase;
+		}
+
+
+
+
+		#DivEquipe {
+			color: #B3B3B3;
+			clear: both;
+			float: left;
+			width: 79.5918%;
+			display: block;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			font-family: 'Capriola', sans-serif;
+			font-size: 12px;
+			line-height: 1.7em;
+			// -webkit-columns: 3;
+			// -moz-columns: 3;
+			// columns: 3;
+			// column-gap: 3em;
+
+		}
+
+		#DivEquipe p {
+			color: #B3B3B3;
+			display: inline-block; 
+			-webkit-column-break-after: always;
+			break-inside: avoid-column;
+			word-wrap: break-word;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			hyphens: auto;
+		}
+
+		#DivEquipe a {
+			color: #666666;
+		}
+
+	}
